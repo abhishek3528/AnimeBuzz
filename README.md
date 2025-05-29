@@ -1,10 +1,10 @@
-# Animeflix
+# AnimeBuzz
 
 ![App Preview](./public/initialScrnshot.png)
 
 ![Initial Version](./public/vite.svg)
 
-This is the initial version of the Animeflix project. More changes and features will be added soon!
+This is the initial version of the AnimeBuzz project. More changes and features will be added soon!
 
 ## Project Setup
 

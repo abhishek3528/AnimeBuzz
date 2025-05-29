@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">AnimeFlix</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">AnimeBuzz</h3>
             <p className="text-secondary mb-4">Your ultimate destination for anime news, reviews, and merchandise.</p>
             <div className="flex space-x-4">
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors">
@@ -60,7 +60,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-6 mt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-secondary text-sm">&copy; {currentYear} AnimeFlix. All rights reserved.</p>
+            <p className="text-secondary text-sm">&copy; {currentYear} AnimeBuzz. All rights reserved.</p>
             <p className="text-secondary text-sm mt-2 md:mt-0">
               Designed with <span className="text-red-500">❤</span> for anime fans
             </p>
