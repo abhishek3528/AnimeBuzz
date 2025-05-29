@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-light font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-background hover:bg-gray-400;
+  }
+
+  .card {
+    @apply bg-dark rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold mb-6 text-light;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 44, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 144, 255, 0.7);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(30, 144, 255, 1);
+}
+
+/* Netflix-style carousel */
+.carousel {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(30, 144, 255, 0.7) rgba(10, 15, 44, 0.5);
+  padding: 1rem 0;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-track {
+  background: rgba(10, 15, 44, 0.5);
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: rgba(30, 144, 255, 0.7);
+  border-radius: 4px;
+}
+
+/* Ensure smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
